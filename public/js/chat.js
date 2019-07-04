@@ -4,8 +4,6 @@ socket.on('message', (message) => {
     console.log(message)
 })
 
-// client (emit) -> server (receive) - increment
-
 document.querySelector('#message-form').addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -13,11 +11,6 @@ document.querySelector('#message-form').addEventListener('submit', (e) => {
     socket.emit('sendMessage', message)
 })
 
-// socket.on('countUpdated', (count) => {
-//     console.log('The count has been updated', count)
-// })
-
-// document.querySelector('#increment').addEventListener('click', () => {
-//     console.log('Clicked')
-//     socket.emit('increment')
-// })
+document.querySelector('#send-location').addEventListener('click', () => {
+    
+})
